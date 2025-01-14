@@ -37,7 +37,7 @@
         mac_to_en: mac_to_en {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LA(LC(NUMBER_1))) &to 0>;
+            bindings = <&kp LS(LA(LC(NUMBER_1))) &to 1>;
             label = "MAC_TO_EN";
             wait-ms = <5>;
             tap-ms = <5>;
