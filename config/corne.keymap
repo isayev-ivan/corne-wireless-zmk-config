@@ -76,7 +76,7 @@
         bracket_right: bracket_right {
             compatible = "zmk,behavior-mod-morph";
             label = "BRACKET_RIGHT";
-            bindings = <&kp LEFT_PARENTHESIS>, <&kp LS(RA(NUMBER_7))>;
+            bindings = <&kp RIGHT_PARENTHESIS>, <&kp LS(RA(NUMBER_7))>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
