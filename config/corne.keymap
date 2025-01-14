@@ -37,7 +37,7 @@
         mac_to_en: mac_to_en {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LA(LC(NUMBER_1))) &to 1>;
+            bindings = <&kp LS(LA(LC(NUMBER_1))) &to 0>;
             label = "MAC_TO_EN";
             wait-ms = <5>;
             tap-ms = <5>;
@@ -182,42 +182,55 @@
 
             display-name = "Base";
             bindings = <
-&kp RA(H)                       &kp Q  &kp W  &kp E     &kp R  &kp T        &kp Y    &kp U  &kp I      &kp O    &kp P     &kp BSPC
-&mt LEFT_ALT GRAVE              &kp A  &kp S  &kp D     &kp F  &kp G        &kp H    &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
-&mt LEFT_CONTROL RIGHT_BRACKET  &kp Z  &kp X  &kp C     &kp V  &kp B        &kp N    &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                                              &kp LGUI  &mo 1  &kp SPACE    &kp RET  &mo 2  &kp RALT
+&kp RA(H)                       &kp Q  &kp W  &kp E      &kp R             &kp T                &kp Y                  &kp U                      &kp I             &kp O    &kp P        &kp LEFT_BRACKET
+&mt LEFT_ALT GRAVE              &kp A  &kp S  &kp D      &hrm_left 3 F     &kp G                &kp H                  &hrm_right 4 J             &kp K             &kp L    &kp SEMI     &mt RIGHT_ALT APOSTROPHE
+&mt LEFT_CONTROL RIGHT_BRACKET  &kp Z  &kp X  &kp C      &kp V             &kp B                &kp N                  &kp M                      &kp COMMA         &kp DOT  &quest_excl  &mt RIGHT_CONTROL RA(SLASH)
+                                              &lt 2 TAB  &mt LSHIFT SPACE  &mt LEFT_META RET    &mt RIGHT_META ESCAPE  &mt RIGHT_SHIFT BACKSPACE  &to_en_raise 2 0
             >;
         };
 
-        lower_layer {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
-            // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
-            // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
-            //                    | GUI |     | SPC |   | ENT |     | ALT |
-
-            display-name = "Lower";
+        mac_en {
             bindings = <
-&kp TAB     &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp N6    &kp N7    &kp N8    &kp N9     &kp N0  &kp BSPC
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans  &trans
-&kp LSHFT   &trans        &trans        &trans        &trans        &trans          &trans    &trans    &trans    &trans     &trans  &trans
-                                        &kp LGUI      &trans        &kp SPACE       &kp RET   &trans    &kp RALT
+&kp DOLLAR                  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans            &trans             &trans            &kp UNDERSCORE
+&mt LEFT_ALT AMPERSAND      &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans            &trans             &kp SINGLE_QUOTE  &mt RIGHT_ALT DOUBLE_QUOTES
+&mt LEFT_CONTROL BACKSLASH  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans            &trans
+                                            &trans  &trans  &trans    &trans  &trans  &to_ru_raise 2 0
             >;
         };
 
         raise_layer {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-            // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-            // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-            //                    | GUI |     | SPC |   | ENT |     | ALT |
-
-            display-name = "Raise";
             bindings = <
-&kp TAB    &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp BSPC
-&kp LCTRL  &trans    &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &kp GRAVE
-&kp LSHFT  &trans    &trans  &trans    &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &kp TILDE
-                             &kp LGUI  &trans    &kp SPACE    &kp RET    &trans     &kp RALT
+&mo 5               &kp KP_SLASH     &kp N9  &kp N8  &kp N7  &kp KP_MINUS    &kp C_VOL_UP  &kp HOME     &kp UP                &kp END        &kp C_PREV  &mo 5
+&mt LEFT_ALT EQUAL  &kp KP_MULTIPLY  &kp N3  &kp N2  &kp N1  &kp N0          &kp C_MUTE    &kp LEFT     &kp DOWN              &kp RIGHT      &kp C_PP    &mt RIGHT_ALT CAPSLOCK
+&trans              &kp KP_DOT       &kp N6  &kp N5  &kp N4  &kp KP_PLUS     &kp C_VOL_DN  &kp PAGE_UP  &kp LG(LS(NUMBER_4))  &kp PAGE_DOWN  &kp C_NEXT  &trans
+                                             &trans  &trans  &trans          &trans        &trans       &trans
+            >;
+        };
+
+        symbol_right {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans             &mg_dot     &kp RA(N9)            &kp RA(N0)             &trans           &kp UNDERSCORE
+&trans  &trans  &trans  &trans  &trans  &trans    &kp RA(SEMICOLON)  &kp RA(N7)  &bracket_left         &bracket_right         &kp ASTERISK     &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans             &trans      &kp RA(LEFT_BRACKET)  &kp RA(RIGHT_BRACKET)  &kp EXCLAMATION  &kp PIPE
+                        &trans  &trans  &trans    &trans             &trans      &trans
+            >;
+        };
+
+        symbol_left {
+            bindings = <
+&kp RA(H)          &kp RA(N)    &kp PERCENT        &up_hash       &mg_comma      &kp RA(F)                &trans  &trans  &trans  &trans  &trans  &trans
+&trans             &kp PLUS     &equal_left        &minus_down    &comma_right   &kp LS(RA(SEMICOLON))    &trans  &trans  &trans  &trans  &trans  &trans
+&kp RA(BACKSLASH)  &kp AT_SIGN  &kp LS(RA(MINUS))  &kp RA(MINUS)  &kp RA(GRAVE)  &kp LS(RA(GRAVE))        &trans  &trans  &trans  &trans  &trans  &trans
+                                                   &trans         &trans         &trans                   &trans  &trans  &trans
+            >;
+        };
+
+        settings {
+            bindings = <
+&trans      &none         &none         &none         &sys_reset    &bootloader     &bootloader   &sys_reset    &none         &none         &none         &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR
+&kp F1      &kp F2        &kp F3        &kp F4        &kp F5        &kp F6          &kp F7        &kp F8        &kp F9        &kp F10       &kp F11       &kp F12
+                                        &trans        &none         &trans          &none         &trans        &trans
             >;
         };
     };
