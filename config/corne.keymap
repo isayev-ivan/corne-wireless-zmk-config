@@ -202,7 +202,7 @@
             bindings = <
 &mo 5               &kp KP_SLASH     &kp N9  &kp N8  &kp N7  &kp KP_MINUS    &kp C_VOL_UP  &kp HOME     &kp UP                &kp END        &kp C_PREV  &mo 5
 &mt LEFT_ALT EQUAL  &kp KP_MULTIPLY  &kp N3  &kp N2  &kp N1  &kp N0          &kp C_MUTE    &kp LEFT     &kp DOWN              &kp RIGHT      &kp C_PP    &mt RIGHT_ALT CAPSLOCK
-&trans              &kp KP_DOT       &kp N6  &kp N5  &kp N4  &kp KP_PLUS     &kp C_VOL_DN  &kp PAGE_UP  &kp LG(LS(NUMBER_4))  &kp PAGE_DOWN  &kp C_NEXT  &trans
+&trans              &kp KP_DOT       &kp N6  &kp N5  &kp N4  &kp KP_PLUS     &kp C_VOL_DN  &kp PAGE_UP  &kp LG(LS(NUMBER_4))  &kp PAGE_DOWN  &kp C_NEXT  &kp LS(LG(N6))
                                              &trans  &trans  &trans          &trans        &trans       &trans
             >;
         };

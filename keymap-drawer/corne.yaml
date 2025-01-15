@@ -1,0 +1,260 @@
+layout: {qmk_keyboard: corne_rotated, layout_name: LAYOUT_split_3x6_3}
+layers:
+  Base:
+  - AltGr+H
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - '['
+  - {t: '`', h: LEFT ALT}
+  - A
+  - S
+  - D
+  - {t: F, h: symbol_right}
+  - G
+  - H
+  - {t: J, h: symbol_left}
+  - K
+  - L
+  - ;
+  - {t: '''', h: RIGHT ALT}
+  - {t: ']', h: LEFT CONTROL}
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - {t: Sft+AltGr+/, s: '!'}
+  - {t: AltGr+/, h: RIGHT CONTROL}
+  - {t: TAB, h: raise}
+  - {t: SPACE, h: LSHIFT}
+  - {t: RET, h: LEFT META}
+  - {t: ESCAPE, h: RIGHT META}
+  - {t: BACKSPACE, h: RIGHT SHIFT}
+  - {t: '&mac_to_en', h: raise}
+  mac_en:
+  - $
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - _
+  - {t: '&', h: LEFT ALT}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''''
+  - {t: '"', h: RIGHT ALT}
+  - {t: \, h: LEFT CONTROL}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '['
+  - ']'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: '&mac_to_ru', h: raise}
+  raise:
+  - settings
+  - KP SLASH
+  - '9'
+  - '8'
+  - '7'
+  - KP MINUS
+  - VOL UP
+  - HOME
+  - UP
+  - END
+  - PREV
+  - settings
+  - {t: '=', h: LEFT ALT}
+  - KP MULTIPLY
+  - '3'
+  - '2'
+  - '1'
+  - '0'
+  - MUTE
+  - LEFT
+  - DOWN
+  - RIGHT
+  - PP
+  - {t: CAPSLOCK, h: RIGHT ALT}
+  - {t: ▽, type: trans}
+  - KP DOT
+  - '6'
+  - '5'
+  - '4'
+  - KP PLUS
+  - VOL DN
+  - PAGE UP
+  - Gui+Sft+4
+  - PAGE DOWN
+  - NEXT
+  - Sft+Gui+6
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  symbol_right:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&mg_dot'
+  - AltGr+9
+  - AltGr+0
+  - {t: ▽, type: trans}
+  - _
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - AltGr+;
+  - AltGr+7
+  - {t: (, s: Sft+AltGr+6}
+  - {t: ), s: Sft+AltGr+7}
+  - '*'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - AltGr+[
+  - AltGr+]
+  - '!'
+  - '|'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  symbol_left:
+  - AltGr+H
+  - AltGr+N
+  - '%'
+  - {t: '#', s: AltGr+I}
+  - '&mg_comma'
+  - AltGr+F
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - +
+  - {t: '=', s: AltGr+J}
+  - {t: '-', s: AltGr+K}
+  - {t: AltGr+6, s: AltGr+L}
+  - Sft+AltGr+;
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - AltGr+\
+  - '@'
+  - Sft+AltGr+-
+  - AltGr+-
+  - AltGr+`
+  - Sft+AltGr+`
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  settings:
+  - {type: held}
+  - ''
+  - ''
+  - ''
+  - '&sys_reset'
+  - '&bootloader'
+  - '&bootloader'
+  - '&sys_reset'
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - BT CLR
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
+  - {t: BT, h: '4'}
+  - {t: BT, h: '4'}
+  - {t: BT, h: '3'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '0'}
+  - BT CLR
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - F11
+  - F12
+  - {type: held}
+  - ''
+  - {t: ▽, type: trans}
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
