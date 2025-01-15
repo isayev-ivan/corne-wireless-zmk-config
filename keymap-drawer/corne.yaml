@@ -122,7 +122,7 @@ layers:
   - Gui+Sft+4
   - PAGE DOWN
   - NEXT
-  - Sft+Gui+5
+  - Sft+Gui+6
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
