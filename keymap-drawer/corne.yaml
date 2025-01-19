@@ -119,10 +119,10 @@ layers:
   - KP PLUS
   - VOL DN
   - PAGE UP
-  - Gui+Sft+4
+  - Gui+Sft+S
   - PAGE DOWN
   - NEXT
-  - Sft+Gui+6
+  - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
