@@ -25,7 +25,7 @@ layers:
   - L
   - ;
   - {t: '''', h: RIGHT ALT}
-  - {t: ']', h: LEFT CONTROL}
+  - {t: ']', h: LEFT WIN}
   - Z
   - X
   - C
@@ -36,14 +36,14 @@ layers:
   - ','
   - .
   - {t: Sft+AltGr+/, s: '!'}
-  - {t: AltGr+/, h: RIGHT CONTROL}
+  - {t: AltGr+/, h: RIGHT WIN}
   - {t: TAB, h: raise}
   - {t: SPACE, h: LSHIFT}
-  - {t: RET, h: LEFT META}
-  - {t: ESCAPE, h: RIGHT META}
+  - {t: RET, h: LEFT CONTROL}
+  - {t: ESCAPE, h: RIGHT CONTROL}
   - {t: BACKSPACE, h: RIGHT SHIFT}
   - {t: '&mac_to_en', h: raise}
-  mac_en:
+  win_en:
   - $
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -68,7 +68,7 @@ layers:
   - {t: ▽, type: trans}
   - ''''
   - {t: '"', h: RIGHT ALT}
-  - {t: \, h: LEFT CONTROL}
+  - {t: \, h: LEFT WIN}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}

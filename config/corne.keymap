@@ -173,7 +173,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        mac_default_ru {
+        win_default_ru {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
             // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
@@ -182,19 +182,19 @@
 
             display-name = "Base";
             bindings = <
-&kp RA(H)                       &kp Q  &kp W  &kp E      &kp R             &kp T                &kp Y                  &kp U                      &kp I             &kp O    &kp P        &kp LEFT_BRACKET
-&mt LEFT_ALT GRAVE              &kp A  &kp S  &kp D      &hrm_left 3 F     &kp G                &kp H                  &hrm_right 4 J             &kp K             &kp L    &kp SEMI     &mt RIGHT_ALT APOSTROPHE
-&mt LEFT_CONTROL RIGHT_BRACKET  &kp Z  &kp X  &kp C      &kp V             &kp B                &kp N                  &kp M                      &kp COMMA         &kp DOT  &quest_excl  &mt RIGHT_CONTROL RA(SLASH)
-                                              &lt 2 TAB  &mt LSHIFT SPACE  &mt LEFT_META RET    &mt RIGHT_META ESCAPE  &mt RIGHT_SHIFT BACKSPACE  &to_en_raise 2 0
+&kp RA(H)                   &kp Q  &kp W  &kp E      &kp R             &kp T                   &kp Y                     &kp U                      &kp I             &kp O    &kp P        &kp LEFT_BRACKET
+&mt LEFT_ALT GRAVE          &kp A  &kp S  &kp D      &hrm_left 3 F     &kp G                   &kp H                     &hrm_right 4 J             &kp K             &kp L    &kp SEMI     &mt RIGHT_ALT APOSTROPHE
+&mt LEFT_WIN RIGHT_BRACKET  &kp Z  &kp X  &kp C      &kp V             &kp B                   &kp N                     &kp M                      &kp COMMA         &kp DOT  &quest_excl  &mt RIGHT_WIN RA(SLASH)
+                                          &lt 2 TAB  &mt LSHIFT SPACE  &mt LEFT_CONTROL RET    &mt RIGHT_CONTROL ESCAPE  &mt RIGHT_SHIFT BACKSPACE  &to_en_raise 2 0
             >;
         };
 
-        mac_en {
+        win_en {
             bindings = <
-&kp DOLLAR                  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans            &trans             &trans            &kp UNDERSCORE
-&mt LEFT_ALT AMPERSAND      &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans            &trans             &kp SINGLE_QUOTE  &mt RIGHT_ALT DOUBLE_QUOTES
-&mt LEFT_CONTROL BACKSLASH  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans            &trans
-                                            &trans  &trans  &trans    &trans  &trans  &to_ru_raise 2 0
+&kp DOLLAR              &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans            &trans             &trans            &kp UNDERSCORE
+&mt LEFT_ALT AMPERSAND  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans            &trans             &kp SINGLE_QUOTE  &mt RIGHT_ALT DOUBLE_QUOTES
+&mt LEFT_WIN BACKSLASH  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans            &trans
+                                        &trans  &trans  &trans    &trans  &trans  &to_ru_raise 2 0
             >;
         };
 
