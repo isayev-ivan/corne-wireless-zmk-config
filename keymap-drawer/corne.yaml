@@ -42,7 +42,7 @@ layers:
   - {t: RET, h: LEFT CONTROL}
   - {t: ESCAPE, h: RIGHT CONTROL}
   - {t: BACKSPACE, h: RIGHT SHIFT}
-  - {t: '&mac_to_en', h: raise}
+  - {t: '&win_to_en', h: raise}
   win_en:
   - $
   - {t: ▽, type: trans}
